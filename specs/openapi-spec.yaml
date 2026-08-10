@@ -1,0 +1,37 @@
+openapi: 3.0.3
+info:
+  title: ResortAmenity-Link Ingestion API
+  description: Secure REST ingestion endpoints for linking external amenities to Oracle DB engines.
+  version: 1.0.0
+servers:
+  - url: https://{db-instance-url}://
+paths:
+  /v1/amenity-transactions:
+    post:
+      summary: Ingest external amenity transactions
+      security:
+        - OAuth2ClientCredentials: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [transaction_id, opera_guest_id, amenity_type, booking_timestamp, amount_spent_jpy]
+              properties:
+                transaction_id: { type: string }
+                opera_guest_id: { type: string }
+                amenity_type: { type: string, enum: [SPA_TREATMENT, SKI_RENTAL, LIFT_TICKET, PRIVATE_GUIDE] }
+                booking_timestamp: { type: string, format: date-time }
+                amount_spent_jpy: { type: integer }
+      responses:
+        '201':
+          description: Ingested successfully.
+components:
+  securitySchemes:
+    OAuth2ClientCredentials:
+      type: oauth2
+      flows:
+        clientCredentials:
+          tokenUrl: https://{db-instance-url}:///oauth/token
+          scopes: {}
