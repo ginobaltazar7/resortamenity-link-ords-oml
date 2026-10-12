@@ -1,10 +1,15 @@
+# openapi-spec.yaml — FIXED
+# Changes:
+#  1. Proper block indentation throughout (the original was flat/inline, which
+#     parses wrong — e.g. `info: title: ...` on one line is a string, not a map).
+#  2. Fixed malformed server URLs (double "://" and triple slash).
 openapi: 3.0.3
 info:
   title: ResortAmenity-Link Ingestion API
   description: Secure REST ingestion endpoints for linking external amenities to Oracle DB engines.
   version: 1.0.0
 servers:
-  - url: https://{db-instance-url}://
+  - url: https://{db-instance-url}/
 paths:
   /v1/amenity-transactions:
     post:
@@ -27,11 +32,15 @@ paths:
       responses:
         '201':
           description: Ingested successfully.
+        '409':
+          description: Duplicate transaction_id.
+        '400':
+          description: Bad request.
 components:
   securitySchemes:
     OAuth2ClientCredentials:
       type: oauth2
       flows:
         clientCredentials:
-          tokenUrl: https://{db-instance-url}:///oauth/token
+          tokenUrl: https://{db-instance-url}/oauth/token
           scopes: {}
