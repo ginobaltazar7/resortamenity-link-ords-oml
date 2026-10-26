@@ -167,11 +167,11 @@ def oracle_brief(guest_id: str) -> dict:
     TODO (next step, once the OCI Autonomous DB exists).
 
     Query the live views (v_guest_loyalty_tier for visits/spend/loyalty,
-    v_amenity_deep_analytics for items) with python-oracledb thin mode,
+    v_amenity_deep_analytics for items) with oracledb thin mode,
     using DB_USER / DB_PASSWORD / DB_DSN plus the wallet secret file.
     Deliberately a stub: it must fail loudly, never fall back to CSVs
     silently, once Oracle mode is switched on.
-    
+
     """
     raise HTTPException(
         status_code=501,

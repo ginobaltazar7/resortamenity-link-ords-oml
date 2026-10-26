@@ -43,7 +43,7 @@ count, so you can always see which mode is serving.
    `database/oml-pipelines.sql`, and populate the cache (item 6).
 2. Download the DB wallet; upload it as a Render **Secret File**
    (Dashboard → service → Secret Files) and point the connection at it.
-3. Implement `oracle_brief()` with `python-oracledb` thin mode:
+3. Implement `oracle_brief()` with `oracledb` thin mode:
    visits/spend/loyalty from `v_guest_loyalty_tier`, items from
    `v_amenity_deep_analytics`. Keep the response shape identical so the
    demo page works against either mode.
