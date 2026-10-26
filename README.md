@@ -39,3 +39,12 @@ The ingest path and schema are sound. See Roadmap below for the design debt.
       `service_details` (required in one, absent in the other;
       `duration_minutes` is meaningless for lift tickets).
       Resolved 2026-10-26: service_details optional in both specs; view reads guarded with JSON_EXISTS (commits 908129a, fb58a0c, 62cc264).
+
+## Optional model + sample data
+
+- `database/oml-model-optional.sql` — Naive Bayes loyalty model, default OFF. Enable only with `EXEC build_retention_model('Y');`, and only after item 6 (cache population) and real OPERA rebooking labels. See the file header.
+
+- `data/` — SYNTHETIC sample data (not guest data): a generator script, sample transactions and guest labels, and `memory_composer.py`, which composes a staff-facing guest brief plus top-3 amenity recommendations from the sample. See `data/README.md`.
+
+- `demo/index.html` — static demo frontend: pick a guest, see the brief + recommendations. Open the file or serve it statically; no backend, no database.
+

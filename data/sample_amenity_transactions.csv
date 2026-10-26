@@ -1,0 +1,116 @@
+transaction_id,opera_guest_id,amenity_type,booking_timestamp,amount_spent_jpy,raw_payload
+TX00001,G001,SPA_TREATMENT,2026-02-15T00:00:00,23715,"{""service_details"": {""item_name"": ""Deep tissue 90min"", ""duration_minutes"": 90}}"
+TX00002,G002,SKI_RENTAL,2026-05-05T00:00:00,35243,"{""service_details"": {""item_name"": ""Half-day rental"", ""duration_minutes"": 240}}"
+TX00003,G003,PRIVATE_GUIDE,2025-11-01T00:00:00,74776,"{""service_details"": {""item_name"": ""Family ski lesson"", ""duration_minutes"": 180}}"
+TX00004,G003,PRIVATE_GUIDE,2026-07-02T00:00:00,36933,"{""service_details"": {""item_name"": ""Backcountry day"", ""duration_minutes"": 540}}"
+TX00005,G004,PRIVATE_GUIDE,2026-04-06T00:00:00,46919,"{""service_details"": {""item_name"": ""Backcountry day"", ""duration_minutes"": 540}}"
+TX00006,G004,PRIVATE_GUIDE,2026-07-02T00:00:00,70357,"{""service_details"": {""item_name"": ""Family ski lesson"", ""duration_minutes"": 180}}"
+TX00007,G005,SPA_TREATMENT,2026-04-13T00:00:00,67200,"{""service_details"": {""item_name"": ""Onsen entry"", ""duration_minutes"": 120}}"
+TX00008,G006,PRIVATE_GUIDE,2026-04-16T00:00:00,92632,"{""service_details"": {""item_name"": ""Backcountry day"", ""duration_minutes"": 540}}"
+TX00009,G007,SPA_TREATMENT,2026-01-06T00:00:00,28406,"{""service_details"": {""item_name"": ""Onsen entry"", ""duration_minutes"": 120}}"
+TX00010,G007,SPA_TREATMENT,2026-06-21T00:00:00,60237,"{""service_details"": {""item_name"": ""Shiatsu 60min"", ""duration_minutes"": 60}}"
+TX00011,G007,LIFT_TICKET,2026-08-25T00:00:00,11440,{}
+TX00012,G007,SKI_RENTAL,2026-10-16T00:00:00,47053,"{""service_details"": {""item_name"": ""Premium ski set"", ""duration_minutes"": 480}}"
+TX00013,G007,SKI_RENTAL,2026-09-16T00:00:00,26649,"{""service_details"": {""item_name"": ""Half-day rental"", ""duration_minutes"": 240}}"
+TX00014,G007,LIFT_TICKET,2026-07-29T00:00:00,11405,{}
+TX00015,G008,SPA_TREATMENT,2025-11-25T00:00:00,54646,"{""service_details"": {""item_name"": ""Shiatsu 60min"", ""duration_minutes"": 60}}"
+TX00016,G008,SKI_RENTAL,2025-12-22T00:00:00,18242,"{""service_details"": {""item_name"": ""Premium ski set"", ""duration_minutes"": 480}}"
+TX00017,G008,PRIVATE_GUIDE,2026-02-27T00:00:00,68580,"{""service_details"": {""item_name"": ""Family ski lesson"", ""duration_minutes"": 180}}"
+TX00018,G008,LIFT_TICKET,2026-09-11T00:00:00,11779,{}
+TX00019,G008,SPA_TREATMENT,2026-01-25T00:00:00,34757,"{""service_details"": {""item_name"": ""Aromatherapy 45min"", ""duration_minutes"": 45}}"
+TX00020,G008,SPA_TREATMENT,2025-12-31T00:00:00,32502,"{""service_details"": {""item_name"": ""Shiatsu 60min"", ""duration_minutes"": 60}}"
+TX00021,G008,SPA_TREATMENT,2026-09-22T00:00:00,69541,"{""service_details"": {""item_name"": ""Shiatsu 60min"", ""duration_minutes"": 60}}"
+TX00022,G009,PRIVATE_GUIDE,2026-03-06T00:00:00,54214,"{""service_details"": {""item_name"": ""Backcountry day"", ""duration_minutes"": 540}}"
+TX00023,G009,SKI_RENTAL,2026-07-03T00:00:00,14309,"{""service_details"": {""item_name"": ""Full-day rental"", ""duration_minutes"": 480}}"
+TX00024,G009,SKI_RENTAL,2026-05-13T00:00:00,48171,"{""service_details"": {""item_name"": ""Premium ski set"", ""duration_minutes"": 480}}"
+TX00025,G009,SKI_RENTAL,2026-07-25T00:00:00,40557,"{""service_details"": {""item_name"": ""Half-day rental"", ""duration_minutes"": 240}}"
+TX00026,G009,LIFT_TICKET,2026-03-05T00:00:00,11268,{}
+TX00027,G009,PRIVATE_GUIDE,2026-01-30T00:00:00,85724,"{""service_details"": {""item_name"": ""Backcountry day"", ""duration_minutes"": 540}}"
+TX00028,G010,SPA_TREATMENT,2026-09-12T00:00:00,79176,"{""service_details"": {""item_name"": ""Shiatsu 60min"", ""duration_minutes"": 60}}"
+TX00029,G010,SKI_RENTAL,2026-04-21T00:00:00,36318,"{""service_details"": {""item_name"": ""Full-day rental"", ""duration_minutes"": 480}}"
+TX00030,G010,LIFT_TICKET,2026-01-09T00:00:00,9950,{}
+TX00031,G010,SPA_TREATMENT,2026-05-22T00:00:00,64705,"{""service_details"": {""item_name"": ""Onsen entry"", ""duration_minutes"": 120}}"
+TX00032,G010,SKI_RENTAL,2025-10-26T00:00:00,34512,"{""service_details"": {""item_name"": ""Premium ski set"", ""duration_minutes"": 480}}"
+TX00033,G011,SKI_RENTAL,2026-04-17T00:00:00,45862,"{""service_details"": {""item_name"": ""Half-day rental"", ""duration_minutes"": 240}}"
+TX00034,G012,LIFT_TICKET,2026-05-21T00:00:00,14313,{}
+TX00035,G013,PRIVATE_GUIDE,2025-12-23T00:00:00,80347,"{""service_details"": {""item_name"": ""Backcountry day"", ""duration_minutes"": 540}}"
+TX00036,G014,LIFT_TICKET,2026-06-14T00:00:00,12478,{}
+TX00037,G015,SKI_RENTAL,2026-03-24T00:00:00,49982,"{""service_details"": {""item_name"": ""Full-day rental"", ""duration_minutes"": 480}}"
+TX00038,G015,SPA_TREATMENT,2025-11-23T00:00:00,33196,"{""service_details"": {""item_name"": ""Aromatherapy 45min"", ""duration_minutes"": 45}}"
+TX00039,G016,PRIVATE_GUIDE,2026-03-27T00:00:00,74505,"{""service_details"": {""item_name"": ""Family ski lesson"", ""duration_minutes"": 180}}"
+TX00040,G017,SKI_RENTAL,2026-03-27T00:00:00,31414,"{""service_details"": {""item_name"": ""Full-day rental"", ""duration_minutes"": 480}}"
+TX00041,G018,PRIVATE_GUIDE,2025-12-25T00:00:00,98788,"{""service_details"": {""item_name"": ""Family ski lesson"", ""duration_minutes"": 180}}"
+TX00042,G018,SPA_TREATMENT,2025-10-27T00:00:00,45761,"{""service_details"": {""item_name"": ""Deep tissue 90min"", ""duration_minutes"": 90}}"
+TX00043,G018,SKI_RENTAL,2026-07-23T00:00:00,20800,"{""service_details"": {""item_name"": ""Half-day rental"", ""duration_minutes"": 240}}"
+TX00044,G018,SKI_RENTAL,2025-11-11T00:00:00,13277,"{""service_details"": {""item_name"": ""Full-day rental"", ""duration_minutes"": 480}}"
+TX00045,G019,LIFT_TICKET,2026-05-01T00:00:00,8655,{}
+TX00046,G019,LIFT_TICKET,2026-07-05T00:00:00,5031,{}
+TX00047,G019,SPA_TREATMENT,2026-08-11T00:00:00,33884,"{""service_details"": {""item_name"": ""Shiatsu 60min"", ""duration_minutes"": 60}}"
+TX00048,G019,LIFT_TICKET,2026-01-04T00:00:00,5952,{}
+TX00049,G019,SKI_RENTAL,2026-01-02T00:00:00,28347,"{""service_details"": {""item_name"": ""Full-day rental"", ""duration_minutes"": 480}}"
+TX00050,G020,SKI_RENTAL,2026-08-04T00:00:00,41588,"{""service_details"": {""item_name"": ""Full-day rental"", ""duration_minutes"": 480}}"
+TX00051,G021,SKI_RENTAL,2026-02-16T00:00:00,34861,"{""service_details"": {""item_name"": ""Premium ski set"", ""duration_minutes"": 480}}"
+TX00052,G022,SPA_TREATMENT,2026-06-16T00:00:00,70445,"{""service_details"": {""item_name"": ""Deep tissue 90min"", ""duration_minutes"": 90}}"
+TX00053,G023,PRIVATE_GUIDE,2026-09-10T00:00:00,88964,"{""service_details"": {""item_name"": ""Family ski lesson"", ""duration_minutes"": 180}}"
+TX00054,G024,PRIVATE_GUIDE,2025-11-28T00:00:00,58470,"{""service_details"": {""item_name"": ""Private powder guide"", ""duration_minutes"": 420}}"
+TX00055,G024,LIFT_TICKET,2026-02-05T00:00:00,5497,{}
+TX00056,G025,SPA_TREATMENT,2025-12-30T00:00:00,15662,"{""service_details"": {""item_name"": ""Shiatsu 60min"", ""duration_minutes"": 60}}"
+TX00057,G025,PRIVATE_GUIDE,2026-06-19T00:00:00,87287,"{""service_details"": {""item_name"": ""Backcountry day"", ""duration_minutes"": 540}}"
+TX00058,G025,SKI_RENTAL,2025-10-29T00:00:00,21768,"{""service_details"": {""item_name"": ""Premium ski set"", ""duration_minutes"": 480}}"
+TX00059,G025,SPA_TREATMENT,2026-01-28T00:00:00,32425,"{""service_details"": {""item_name"": ""Deep tissue 90min"", ""duration_minutes"": 90}}"
+TX00060,G025,SPA_TREATMENT,2025-12-17T00:00:00,62755,"{""service_details"": {""item_name"": ""Aromatherapy 45min"", ""duration_minutes"": 45}}"
+TX00061,G026,SPA_TREATMENT,2025-12-02T00:00:00,60576,"{""service_details"": {""item_name"": ""Deep tissue 90min"", ""duration_minutes"": 90}}"
+TX00062,G027,LIFT_TICKET,2026-04-07T00:00:00,7584,{}
+TX00063,G027,SKI_RENTAL,2026-01-26T00:00:00,43453,"{""service_details"": {""item_name"": ""Full-day rental"", ""duration_minutes"": 480}}"
+TX00064,G028,SKI_RENTAL,2025-12-10T00:00:00,27669,"{""service_details"": {""item_name"": ""Full-day rental"", ""duration_minutes"": 480}}"
+TX00065,G029,PRIVATE_GUIDE,2025-12-08T00:00:00,86179,"{""service_details"": {""item_name"": ""Backcountry day"", ""duration_minutes"": 540}}"
+TX00066,G030,SPA_TREATMENT,2025-11-21T00:00:00,26414,"{""service_details"": {""item_name"": ""Shiatsu 60min"", ""duration_minutes"": 60}}"
+TX00067,G031,SKI_RENTAL,2026-08-16T00:00:00,13106,"{""service_details"": {""item_name"": ""Premium ski set"", ""duration_minutes"": 480}}"
+TX00068,G032,LIFT_TICKET,2026-07-23T00:00:00,12319,{}
+TX00069,G033,PRIVATE_GUIDE,2026-04-10T00:00:00,61076,"{""service_details"": {""item_name"": ""Backcountry day"", ""duration_minutes"": 540}}"
+TX00070,G034,SKI_RENTAL,2026-02-09T00:00:00,19934,"{""service_details"": {""item_name"": ""Full-day rental"", ""duration_minutes"": 480}}"
+TX00071,G034,PRIVATE_GUIDE,2026-02-16T00:00:00,75337,"{""service_details"": {""item_name"": ""Backcountry day"", ""duration_minutes"": 540}}"
+TX00072,G034,SPA_TREATMENT,2026-04-21T00:00:00,21902,"{""service_details"": {""item_name"": ""Deep tissue 90min"", ""duration_minutes"": 90}}"
+TX00073,G034,SPA_TREATMENT,2026-07-26T00:00:00,38231,"{""service_details"": {""item_name"": ""Shiatsu 60min"", ""duration_minutes"": 60}}"
+TX00074,G034,LIFT_TICKET,2026-10-06T00:00:00,6731,{}
+TX00075,G035,SPA_TREATMENT,2025-12-29T00:00:00,70801,"{""service_details"": {""item_name"": ""Onsen entry"", ""duration_minutes"": 120}}"
+TX00076,G036,PRIVATE_GUIDE,2026-07-10T00:00:00,92775,"{""service_details"": {""item_name"": ""Family ski lesson"", ""duration_minutes"": 180}}"
+TX00077,G037,SKI_RENTAL,2026-05-13T00:00:00,30815,"{""service_details"": {""item_name"": ""Premium ski set"", ""duration_minutes"": 480}}"
+TX00078,G037,SPA_TREATMENT,2026-05-26T00:00:00,18584,"{""service_details"": {""item_name"": ""Deep tissue 90min"", ""duration_minutes"": 90}}"
+TX00079,G037,SKI_RENTAL,2025-12-11T00:00:00,22479,"{""service_details"": {""item_name"": ""Premium ski set"", ""duration_minutes"": 480}}"
+TX00080,G038,LIFT_TICKET,2025-12-25T00:00:00,7562,{}
+TX00081,G038,LIFT_TICKET,2026-03-16T00:00:00,14322,{}
+TX00082,G039,LIFT_TICKET,2026-05-10T00:00:00,9672,{}
+TX00083,G040,SPA_TREATMENT,2025-11-23T00:00:00,20624,"{""service_details"": {""item_name"": ""Onsen entry"", ""duration_minutes"": 120}}"
+TX00084,G041,LIFT_TICKET,2026-08-23T00:00:00,5279,{}
+TX00085,G042,SPA_TREATMENT,2026-06-25T00:00:00,79140,"{""service_details"": {""item_name"": ""Deep tissue 90min"", ""duration_minutes"": 90}}"
+TX00086,G043,SKI_RENTAL,2025-12-07T00:00:00,18960,"{""service_details"": {""item_name"": ""Half-day rental"", ""duration_minutes"": 240}}"
+TX00087,G043,SPA_TREATMENT,2026-03-11T00:00:00,36046,"{""service_details"": {""item_name"": ""Aromatherapy 45min"", ""duration_minutes"": 45}}"
+TX00088,G043,PRIVATE_GUIDE,2026-05-31T00:00:00,59301,"{""service_details"": {""item_name"": ""Family ski lesson"", ""duration_minutes"": 180}}"
+TX00089,G043,SPA_TREATMENT,2026-02-20T00:00:00,21517,"{""service_details"": {""item_name"": ""Deep tissue 90min"", ""duration_minutes"": 90}}"
+TX00090,G044,SKI_RENTAL,2025-12-10T00:00:00,14804,"{""service_details"": {""item_name"": ""Premium ski set"", ""duration_minutes"": 480}}"
+TX00091,G045,PRIVATE_GUIDE,2026-05-14T00:00:00,61170,"{""service_details"": {""item_name"": ""Backcountry day"", ""duration_minutes"": 540}}"
+TX00092,G045,SPA_TREATMENT,2026-03-27T00:00:00,32158,"{""service_details"": {""item_name"": ""Shiatsu 60min"", ""duration_minutes"": 60}}"
+TX00093,G045,SKI_RENTAL,2026-04-04T00:00:00,23606,"{""service_details"": {""item_name"": ""Premium ski set"", ""duration_minutes"": 480}}"
+TX00094,G045,SKI_RENTAL,2026-08-15T00:00:00,27957,"{""service_details"": {""item_name"": ""Premium ski set"", ""duration_minutes"": 480}}"
+TX00095,G045,SKI_RENTAL,2026-06-02T00:00:00,42065,"{""service_details"": {""item_name"": ""Full-day rental"", ""duration_minutes"": 480}}"
+TX00096,G045,LIFT_TICKET,2026-02-20T00:00:00,5161,{}
+TX00097,G046,LIFT_TICKET,2026-04-23T00:00:00,10269,{}
+TX00098,G047,SKI_RENTAL,2026-09-29T00:00:00,48199,"{""service_details"": {""item_name"": ""Premium ski set"", ""duration_minutes"": 480}}"
+TX00099,G048,SPA_TREATMENT,2026-04-26T00:00:00,50130,"{""service_details"": {""item_name"": ""Deep tissue 90min"", ""duration_minutes"": 90}}"
+TX00100,G048,SKI_RENTAL,2026-04-08T00:00:00,39764,"{""service_details"": {""item_name"": ""Full-day rental"", ""duration_minutes"": 480}}"
+TX00101,G048,SPA_TREATMENT,2026-06-07T00:00:00,61266,"{""service_details"": {""item_name"": ""Aromatherapy 45min"", ""duration_minutes"": 45}}"
+TX00102,G049,PRIVATE_GUIDE,2026-06-20T00:00:00,60165,"{""service_details"": {""item_name"": ""Backcountry day"", ""duration_minutes"": 540}}"
+TX00103,G050,LIFT_TICKET,2026-08-29T00:00:00,12947,{}
+TX00104,G051,SKI_RENTAL,2026-04-26T00:00:00,33482,"{""service_details"": {""item_name"": ""Half-day rental"", ""duration_minutes"": 240}}"
+TX00105,G052,PRIVATE_GUIDE,2026-01-09T00:00:00,31715,"{""service_details"": {""item_name"": ""Family ski lesson"", ""duration_minutes"": 180}}"
+TX00106,G053,SPA_TREATMENT,2026-02-25T00:00:00,34219,"{""service_details"": {""item_name"": ""Deep tissue 90min"", ""duration_minutes"": 90}}"
+TX00107,G054,LIFT_TICKET,2026-01-06T00:00:00,11816,{}
+TX00108,G055,SPA_TREATMENT,2026-02-26T00:00:00,60317,"{""service_details"": {""item_name"": ""Aromatherapy 45min"", ""duration_minutes"": 45}}"
+TX00109,G056,SKI_RENTAL,2025-12-07T00:00:00,24408,"{""service_details"": {""item_name"": ""Premium ski set"", ""duration_minutes"": 480}}"
+TX00110,G056,PRIVATE_GUIDE,2025-11-20T00:00:00,36533,"{""service_details"": {""item_name"": ""Backcountry day"", ""duration_minutes"": 540}}"
+TX00111,G057,LIFT_TICKET,2026-10-13T00:00:00,7549,{}
+TX00112,G058,LIFT_TICKET,2025-10-27T00:00:00,14664,{}
+TX00113,G059,SKI_RENTAL,2026-07-23T00:00:00,29170,"{""service_details"": {""item_name"": ""Premium ski set"", ""duration_minutes"": 480}}"
+TX00114,G059,SPA_TREATMENT,2026-09-06T00:00:00,42771,"{""service_details"": {""item_name"": ""Aromatherapy 45min"", ""duration_minutes"": 45}}"
+TX00115,G060,SKI_RENTAL,2025-11-23T00:00:00,47857,"{""service_details"": {""item_name"": ""Full-day rental"", ""duration_minutes"": 480}}"
