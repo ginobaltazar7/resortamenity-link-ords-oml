@@ -1,7 +1,7 @@
 # ResortAmenity-Link
 Off-property amenity spend, linked to OPERA guest loyalty.
 
-Links off-property resort amenities (spa treatments, ski rentals, lift tickets, private guides) to Oracle OPERA Cloud guest profiles, so a resort or hotel property can see how ancillary spend relates to repeat-visit loyalty.
+Links off-property resort amenities (spa treatments, ski rentals, lift tickets, private guides) to Oracle OPERA Cloud guest profiles, so a resort or hotel property can see how ancillary spend relates to repeat-visit loyalty. [Click here for the demo](https://resortamenity-demo.onrender.com/)
 
 ![App Screenshot](docs/resortamenityscreenshot.png?v=2)
 
