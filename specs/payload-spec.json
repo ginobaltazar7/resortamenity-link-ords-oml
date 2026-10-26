@@ -7,8 +7,7 @@
     "opera_guest_id",
     "amenity_type",
     "booking_timestamp",
-    "amount_spent_jpy",
-    "service_details"
+    "amount_spent_jpy"
   ],
   "properties": {
     "transaction_id": { "type": "string" },
