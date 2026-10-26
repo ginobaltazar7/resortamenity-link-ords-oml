@@ -1,3 +1,4 @@
+# Previous ML version preserved in git history: commit 456a74e3af53 (2026-10-12).
 # openapi-spec.yaml — FIXED
 # Changes:
 #  1. Proper block indentation throughout (the original was flat/inline, which
@@ -29,6 +30,12 @@ paths:
                 amenity_type: { type: string, enum: [SPA_TREATMENT, SKI_RENTAL, LIFT_TICKET, PRIVATE_GUIDE] }
                 booking_timestamp: { type: string, format: date-time }
                 amount_spent_jpy: { type: integer }
+                service_details:
+                  type: object
+                  description: Optional, varies by amenity type. SPA_TREATMENT carries item_name and duration_minutes; other types may omit it.
+                  properties:
+                    item_name: { type: string }
+                    duration_minutes: { type: integer }
       responses:
         '201':
           description: Ingested successfully.
