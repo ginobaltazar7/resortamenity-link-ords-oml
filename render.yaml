@@ -1,0 +1,32 @@
+# Render Blueprint for resortamenity-link-ords-oml.
+# Deploy: Render Dashboard -> New -> Blueprint -> select this repo.
+# Render reads this file and creates both services below.
+services:
+  # 1. Static demo frontend — free, never sleeps.
+  #    Serves demo/index.html as-is. No build step.
+  - type: web
+    name: resortamenity-demo
+    env: static
+    staticPublishPath: demo
+
+  # 2. Thin Python API — free tier (sleeps when idle; first request wakes it).
+  #    Runs on the synthetic CSVs today; Oracle wiring is the next step
+  #    (see api/README.md). Render sets $PORT automatically.
+  - type: web
+    name: resortamenity-api
+    env: python
+    plan: free
+    buildCommand: pip install -r api/requirements.txt
+    startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      # CSV mode needs no secrets and works on first deploy.
+      - key: DATA_DIR
+        value: data
+      # Oracle mode (later): set these in the Dashboard, never in the repo.
+      # sync: false means Render does NOT take the value from this file.
+      - key: DB_USER
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_DSN
+        sync: false

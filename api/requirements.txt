@@ -1,0 +1,3 @@
+fastapi
+uvicorn[standard]
+python-oracledb  # thin mode: no Instant Client needed. Unused until the Oracle wiring lands.
