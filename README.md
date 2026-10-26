@@ -3,6 +3,8 @@ Off-property amenity spend, linked to OPERA guest loyalty.
 
 Links off-property resort amenities (spa treatments, ski rentals, lift tickets, private guides) to Oracle OPERA Cloud guest profiles, so a resort or hotel property can see how ancillary spend relates to repeat-visit loyalty.
 
+![App Screenshot](docs/resortamenityscreenshot.png?v=2)
+
 ## How it works:
 Amenity POS systems POST transactions to an ORDS REST endpoint (`/v1/amenity-transactions`), which lands them in `amenity_transactions` keyed to `opera_guest_id`. Per-guest spend is aggregated in `amenity_analytics_cache`, and a loyalty rule flags repeat guests (3+ amenity visits with combined spa + ski spend over JPY 150,000). The former Naive Bayes model was dropped as tautological — see database/oml-pipelines.sql.
 
