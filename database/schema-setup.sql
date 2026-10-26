@@ -1,3 +1,4 @@
+-- Previous version preserved in git history: commit 456a74e3af53 (2026-10-12).
 -- schema-setup.sql — FIXED
 -- Change: DROP TABLEs wrapped so first-run doesn't throw ORA-00942.
 -- Everything else unchanged.
@@ -48,6 +49,8 @@ CREATE TABLE amenity_analytics_cache (
 CREATE OR REPLACE VIEW v_amenity_deep_analytics AS
 SELECT
  t.ingest_id, t.transaction_id, t.opera_guest_id, t.amenity_type, t.booking_timestamp, t.amount_spent_jpy,
- t.raw_payload.service_details.item_name AS specific_service_name,
- t.raw_payload.service_details.duration_minutes AS service_duration
+ CASE WHEN JSON_EXISTS(t.raw_payload, '$.service_details.item_name')
+      THEN t.raw_payload.service_details.item_name ELSE NULL END AS specific_service_name,
+ CASE WHEN JSON_EXISTS(t.raw_payload, '$.service_details.duration_minutes')
+      THEN t.raw_payload.service_details.duration_minutes ELSE NULL END AS service_duration
 FROM amenity_transactions t;
