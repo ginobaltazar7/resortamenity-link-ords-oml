@@ -15,14 +15,17 @@ Endpoints:
   GET /health           -> {"status": "ok", "mode": "csv" | "oracle"}
   GET /guests           -> ["G001", ..., "G060"] (synthetic guest ids)
   GET /brief/{guest_id} -> visits, total spend, spend by type, favorite
-                           items, last stay, loyalty flag, and top-3
-                           recommendations, each with a reason.
+                           items, last stay, loyalty flag, remembered
+                           memory notes, prep actions, suggested
+                           questions, and top-3 recommendations, each
+                           with a reason.
 
 The brief shape mirrors the static demo (demo/index.html) and the
 memory_composer.py rules: same loyalty rule (3+ visits AND spa+ski
 spend > JPY 150,000), same recommendation rules (new item in the top
 category, most popular untried item, cross-type step-up, popularity
-fallback for cold-start guests). The synthetic ground truth
+fallback for cold-start guests), same memory-note -> prep-action and
+suggested-question rules. The synthetic ground truth
 (actually_returned) is never used — it is future knowledge.
 
 Run locally from the repo root:
@@ -77,6 +80,80 @@ for _t, _items in {
 
 LOYALTY_MIN_VISITS = 3
 LOYALTY_MIN_SPA_SKI_JPY = 150000
+LOYALTY_RULE = "3+ visits AND spa+ski spend > JPY 150,000"
+
+
+# Same memory-note -> prep-action / suggested-question rules as
+# memory_composer.py. Kept in sync with the composer by hand; if the
+# rules change there, change them here too.
+def memory_depth(visits: int) -> str:
+    if visits >= 5:
+        return "Deep memory"
+    if visits >= 2:
+        return "Growing memory"
+    return "First impression"
+
+
+def prep_actions(notes) -> list:
+    actions = []
+    for cat, note in notes:
+        if cat == "CHILDREN":
+            actions.append("Set the room up family-style and confirm "
+                           "family lesson times.")
+        elif cat == "SKI":
+            if "Backcountry" in note:
+                actions.append("Confirm the guide booking for the "
+                               "backcountry day.")
+            elif "premium" in note:
+                actions.append("Hold the premium ski set for arrival day.")
+            else:
+                actions.append("Confirm ski rental sizes for arrival day.")
+        elif cat == "SPA":
+            if "Deep tissue" in note:
+                actions.append("Reserve the usual Deep tissue 90min slot.")
+            else:
+                actions.append("Reserve a spa treatment slot for arrival "
+                               "evening.")
+        elif cat == "ONSEN":
+            if note.startswith("Hasn't"):
+                actions.append("Mention the evening onsen at check-in.")
+            else:
+                actions.append("Leave the evening onsen hours card in the "
+                               "room.")
+        elif cat == "DINING":
+            if "Early dinner" in note:
+                actions.append("Flag an early dinner seating.")
+            elif "quiet table" in note:
+                actions.append("Request a quiet table for dinner.")
+            else:
+                actions.append("Have local dinner recommendations ready at "
+                               "check-in.")
+    seen = set()
+    out = []
+    for a in actions:
+        if a not in seen:
+            seen.add(a)
+            out.append(a)
+    return out
+
+
+def suggested_questions(notes, fav, visits) -> list:
+    qs = []
+    cats = {c for c, _ in notes}
+    if fav:
+        qs.append(f"Welcome back — shall I book your usual {fav}?")
+    if "CHILDREN" in cats:
+        qs.append("Shall I confirm the family lesson times for this stay?")
+    if any(c == "ONSEN" and n.startswith("Hasn't") for c, n in notes):
+        qs.append("Have you tried the evening onsen? Guests who enjoy the "
+                  "spa usually love it.")
+    if "DINING" in cats:
+        qs.append("Would you like me to hold an early dinner seating after "
+                  "your ski day?")
+    if visits <= 1 and not qs:
+        qs.append("Is this your first stay with us? I can walk you through "
+                  "the spa and ski options.")
+    return qs[:3]
 
 
 # ---------------------------------------------------------------- CSV mode
@@ -98,6 +175,13 @@ def load_csv_briefs(data_dir: Path) -> dict:
             payload = json.loads(t["raw_payload"])
             if payload.get("service_details"):
                 popularity[payload["service_details"]["item_name"]] += 1
+    memory: dict = defaultdict(list)
+    mem_path = data_dir / "sample_guest_memory.csv"
+    if mem_path.exists():
+        with open(mem_path, newline="") as f:
+            for r in csv.DictReader(f):
+                memory[r["opera_guest_id"]].append((r["category"],
+                                                    r["note"]))
 
     briefs = {}
     for gid, rows in by_guest.items():
@@ -145,6 +229,8 @@ def load_csv_briefs(data_dir: Path) -> dict:
                 break
             if item not in tried and item not in [r["item"] for r in recs]:
                 recs.append({"item": item, "reason": "popular fallback"})
+        notes = memory.get(gid, [])
+        fav = items.most_common(1)[0][0] if items else None
         briefs[gid] = {
             "guest_id": gid,
             "visits": visits,
@@ -154,7 +240,16 @@ def load_csv_briefs(data_dir: Path) -> dict:
                                for i, n in items.most_common(3)],
             "last_stay": last_stay.date().isoformat() if last_stay else None,
             "loyal": loyal,
+            "memory_depth": memory_depth(visits),
+            "memory_notes": [{"category": c, "note": n} for c, n in notes],
+            "prep_actions": prep_actions(notes),
             "recommendations": recs[:3],
+            "suggested_questions": suggested_questions(notes, fav, visits),
+            "composed_from": {
+                "transactions": len(rows),
+                "memory_notes": len(notes),
+                "loyalty_rule": LOYALTY_RULE,
+            },
             "synthetic": True,
         }
     return briefs

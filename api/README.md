@@ -1,10 +1,13 @@
-# ResortAmenity thin API
+# Resort Amenity thin API
 
-Staff-facing guest briefs as JSON. Same brief shape and same rules as
-`demo/index.html` and `data/memory_composer.py` (loyalty rule: 3+ visits
-AND spa+ski spend > JPY 150,000 (~USD 1,000); recommendations: new item in the top
-category, most popular untried item, cross-type step-up, popularity
-fallback). The synthetic ground truth (`actually_returned`) is never used.
+This API serves staff-facing guest briefs as JSON, with the same brief shape and rules as `demo/index.html` and `data/memory_composer.py`:
+
+- Loyalty rule: 3+ visits AND spa+ski spend over JPY 150,000 (~USD 1,000).
+- Recommendations: a new item in the guest's top category, the most popular untried item, a cross-type step-up, and a popularity fallback.
+- Remembered memory notes, with prep actions and suggested questions derived from them.
+
+The synthetic ground truth (`actually_returned`) is never used in briefs.
+
 
 ## Run locally (from the repo root)
 
@@ -30,6 +33,7 @@ count, so you can always see which mode is serving.
 - **CSV mode (default, works on first deploy):** briefs are computed
   from the synthetic CSVs in `DATA_DIR` (default: repo `data/`).
   No database, no secrets.
+
 - **Oracle mode (next step):** set `DB_USER`, `DB_PASSWORD`, and
   `DB_DSN` in the Render Dashboard (never in the repo) and the API
   switches mode — but `oracle_brief()` in `api/main.py` is still a stub
@@ -41,12 +45,15 @@ count, so you can always see which mode is serving.
 
 1. Create the Autonomous DB, deploy `database/schema-setup.sql` and
    `database/oml-pipelines.sql`, and populate the cache (item 6).
+
 2. Download the DB wallet; upload it as a Render **Secret File**
    (Dashboard → service → Secret Files) and point the connection at it.
+
 3. Implement `oracle_brief()` with `oracledb` thin mode:
    visits/spend/loyalty from `v_guest_loyalty_tier`, items from
    `v_amenity_deep_analytics`. Keep the response shape identical so the
    demo page works against either mode.
+   
 4. Restrict CORS in `api/main.py` before serving any real guest data
    (it is wide open now because the data is synthetic and public).
 

@@ -1,0 +1,156 @@
+opera_guest_id,category,note
+G001,SPA,Has booked spa treatments.
+G001,ONSEN,Hasn't tried the onsen yet — worth a mention at check-in.
+G001,DINING,Asks about local dinner spots on arrival.
+G002,SKI,Has booked ski rentals or a guide.
+G002,DINING,Prefers a quiet table for dinner.
+G003,SKI,Has booked a backcountry day with a guide.
+G003,DINING,Early dinner after a ski day.
+G003,CHILDREN,Travels with children — a family ski lesson booked.
+G004,SKI,Has booked a backcountry day with a guide.
+G004,DINING,Asks about local dinner spots on arrival.
+G004,CHILDREN,Travels with children — a family ski lesson booked.
+G005,SPA,Has booked spa treatments.
+G005,ONSEN,Has tried the evening onsen.
+G005,DINING,Early dinner after a ski day.
+G006,SKI,Has booked a backcountry day with a guide.
+G006,DINING,Prefers a quiet table for dinner.
+G007,SKI,Has booked the premium ski set.
+G007,SPA,Has booked spa treatments.
+G007,ONSEN,Has tried the evening onsen.
+G008,SKI,Has booked the premium ski set.
+G008,SPA,Has booked spa treatments.
+G008,CHILDREN,Travels with children — a family ski lesson booked.
+G009,SKI,Backcountry days with a guide — winter activities beyond the groomers.
+G009,DINING,Early dinner after a ski day.
+G010,SKI,Has booked the premium ski set.
+G010,SPA,Has booked spa treatments.
+G010,ONSEN,Has tried the evening onsen.
+G010,DINING,Prefers a quiet table for dinner.
+G011,SKI,Has booked ski rentals or a guide.
+G011,DINING,Prefers a quiet table for dinner.
+G012,DINING,Prefers a quiet table for dinner.
+G013,SKI,Has booked a backcountry day with a guide.
+G013,DINING,Asks about local dinner spots on arrival.
+G014,DINING,Asks about local dinner spots on arrival.
+G015,SKI,Has booked ski rentals or a guide.
+G015,SPA,Has booked spa treatments.
+G015,DINING,Prefers a quiet table for dinner.
+G016,SKI,Has booked ski rentals or a guide.
+G016,DINING,Early dinner after a ski day.
+G016,CHILDREN,Travels with children — a family ski lesson booked.
+G017,SKI,Has booked ski rentals or a guide.
+G017,DINING,Asks about local dinner spots on arrival.
+G018,SKI,Has booked ski rentals or a guide.
+G018,SPA,Has booked spa treatments.
+G018,ONSEN,Hasn't tried the onsen yet — worth a mention at check-in.
+G018,CHILDREN,Travels with children — a family ski lesson booked.
+G019,SKI,Has booked ski rentals or a guide.
+G019,SPA,Has booked spa treatments.
+G020,SKI,Has booked ski rentals or a guide.
+G020,DINING,Prefers a quiet table for dinner.
+G021,SKI,Has booked the premium ski set.
+G021,DINING,Prefers a quiet table for dinner.
+G022,SPA,Has booked spa treatments.
+G022,DINING,Early dinner after a ski day.
+G023,SKI,Has booked ski rentals or a guide.
+G023,CHILDREN,Travels with children — a family ski lesson booked.
+G024,SKI,Has booked ski rentals or a guide.
+G024,DINING,Prefers a quiet table for dinner.
+G025,SKI,Has booked a backcountry day with a guide.
+G025,SPA,Has booked spa treatments.
+G026,SPA,Has booked spa treatments.
+G026,DINING,Early dinner after a ski day.
+G027,SKI,Has booked ski rentals or a guide.
+G027,DINING,Early dinner after a ski day.
+G028,SKI,Has booked ski rentals or a guide.
+G028,DINING,Prefers a quiet table for dinner.
+G029,SKI,Has booked a backcountry day with a guide.
+G030,SPA,Has booked spa treatments.
+G030,DINING,Asks about local dinner spots on arrival.
+G031,SKI,Has booked the premium ski set.
+G031,DINING,Asks about local dinner spots on arrival.
+G032,DINING,Prefers a quiet table for dinner.
+G033,SKI,Has booked a backcountry day with a guide.
+G033,DINING,Asks about local dinner spots on arrival.
+G034,SKI,Has booked a backcountry day with a guide.
+G034,SPA,Has booked spa treatments.
+G034,DINING,Asks about local dinner spots on arrival.
+G035,SPA,Has booked spa treatments.
+G035,ONSEN,Has tried the evening onsen.
+G036,SKI,Has booked ski rentals or a guide.
+G036,CHILDREN,Travels with children — a family ski lesson booked.
+G037,SKI,Skis most visits — usually the premium set.
+G037,SPA,Has booked spa treatments.
+G038,DINING,Early dinner after a ski day.
+G040,SPA,Has booked spa treatments.
+G040,ONSEN,Has tried the evening onsen.
+G040,DINING,Asks about local dinner spots on arrival.
+G041,DINING,Prefers a quiet table for dinner.
+G042,SPA,Has booked spa treatments.
+G043,SKI,Has booked ski rentals or a guide.
+G043,SPA,Has booked spa treatments.
+G043,CHILDREN,Travels with children — a family ski lesson booked.
+G044,SKI,Has booked the premium ski set.
+G045,SKI,Has booked a backcountry day with a guide.
+G045,SPA,Has booked spa treatments.
+G047,SKI,Has booked the premium ski set.
+G048,SKI,Has booked ski rentals or a guide.
+G048,SPA,Has booked spa treatments.
+G048,ONSEN,Hasn't tried the onsen yet — worth a mention at check-in.
+G049,SKI,Has booked a backcountry day with a guide.
+G049,DINING,Prefers a quiet table for dinner.
+G050,DINING,Early dinner after a ski day.
+G051,SKI,Has booked ski rentals or a guide.
+G051,DINING,Early dinner after a ski day.
+G052,SKI,Has booked ski rentals or a guide.
+G052,DINING,Asks about local dinner spots on arrival.
+G052,CHILDREN,Travels with children — a family ski lesson booked.
+G053,SPA,Has booked spa treatments.
+G053,ONSEN,Hasn't tried the onsen yet — worth a mention at check-in.
+G053,DINING,Asks about local dinner spots on arrival.
+G055,SPA,Has booked spa treatments.
+G055,DINING,Early dinner after a ski day.
+G056,SKI,Has booked a backcountry day with a guide.
+G056,DINING,Early dinner after a ski day.
+G057,DINING,Prefers a quiet table for dinner.
+G058,DINING,Early dinner after a ski day.
+G059,SKI,Has booked the premium ski set.
+G059,SPA,Has booked spa treatments.
+G059,DINING,Asks about local dinner spots on arrival.
+G060,SKI,Has booked ski rentals or a guide.
+G060,DINING,Asks about local dinner spots on arrival.
+G061,SKI,Has booked ski rentals or a guide.
+G061,SPA,Has booked spa treatments.
+G061,ONSEN,Hasn't tried the onsen yet — worth a mention at check-in.
+G062,SKI,Has booked the premium ski set.
+G062,SPA,Has booked spa treatments.
+G062,ONSEN,Has tried the evening onsen.
+G063,SKI,Has booked a backcountry day with a guide.
+G063,SPA,Has booked spa treatments.
+G063,ONSEN,Evening onsen regular.
+G064,SKI,Has booked the premium ski set.
+G064,SPA,Has booked spa treatments.
+G064,ONSEN,Evening onsen regular.
+G064,CHILDREN,Travels with children — a family ski lesson booked.
+G065,SKI,Has booked a backcountry day with a guide.
+G065,SPA,Has booked spa treatments.
+G065,ONSEN,Has tried the evening onsen.
+G066,SKI,Backcountry days with a guide — winter activities beyond the groomers.
+G066,SPA,Has booked spa treatments.
+G066,ONSEN,Hasn't tried the onsen yet — worth a mention at check-in.
+G067,SKI,Skis most visits — usually the premium set.
+G067,SPA,Has booked spa treatments.
+G067,DINING,Early dinner after a ski day.
+G068,SKI,Has booked ski rentals or a guide.
+G068,SPA,Has booked spa treatments.
+G068,ONSEN,Has tried the evening onsen.
+G068,DINING,Asks about local dinner spots on arrival.
+G069,SKI,Has booked ski rentals or a guide.
+G069,SPA,Has booked spa treatments.
+G069,ONSEN,Hasn't tried the onsen yet — worth a mention at check-in.
+G070,SKI,Has booked a backcountry day with a guide.
+G070,SPA,Has booked spa treatments.
+G070,ONSEN,Has tried the evening onsen.
+G070,DINING,Early dinner after a ski day.
+G070,CHILDREN,Travels with children — a family ski lesson booked.
