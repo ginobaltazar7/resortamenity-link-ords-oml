@@ -1,12 +1,18 @@
 # Resort Amenity-Link
 > A [lobby boy](https://clip.cafe/the-grand-budapest-hotel-2014/what-a-lobby-boy/) anticipates the client's needs before the needs are needed.
 
+<<<<<<< HEAD
 A hospitality pre-arrival guest brief, that links off-property resort amenities (spa treatments, ski rentals, lift tickets, private guides) based on off-property amenity spend, linked to Oracle OPERA Cloud guest profiles, so a resort or hotel property can see how ancillary spend relates to repeat-visit loyalty. [Click here for the demo](https://resortamenity-demo.onrender.com/)
 
 ![App Screenshot](docs/resortamenityscreenshot.png?v=2)
 
 ## The single-sentence pitch
 > Your front desk already knows this guest: every past visit, onsen, spa, and ski booking, every dining preference, and whether they travel with children, because it is all sitting in OPERA already; this brief simply composes that history into one page so staff can anticipate their needs before they are needed.
+=======
+Links off-property resort amenities (spa treatments, ski rentals, lift tickets, private guides) to Oracle OPERA Cloud guest profiles, so a resort or hotel property can see how ancillary spend relates to repeat-visit loyalty. [Click here for the demo](https://resortamenity-demo.onrender.com/)
+
+![App Screenshot](docs/resortamenityscreenshot.png?v=2)
+>>>>>>> becbee0d49d5817c53d3b3155bb1ae234fccd615
 
 ## How it works:
 Amenity POS systems POST transactions to an ORDS REST endpoint (`/v1/amenity-transactions`), which lands them in `amenity_transactions` keyed to `opera_guest_id`. 
